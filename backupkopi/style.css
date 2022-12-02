@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+
+
+#grid-container{
+    display: grid;
+    grid-template-areas: ". header ."
+    ". main ."
+    ". aside ."
+    ". footer .";
+    grid-template-columns: 0.25fr 2fr 0.25fr;
+}
+
+/*justerte grid på header main aside og footer for å få alle i midten*/
+
+body{
+    background: url(bilder/bakgrunn1.jpg) no-repeat;
+    margin: 0;
+    background-size: cover;
+    background-position: relativ;
+    position: relative;
+}
+
+/*pyntet body med bakgrunnsbilde og dekket hele nettsiden*/
+
+nav{
+    display: flex;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    padding: 16px 17px;
+}
+
+
+
+header{
+    font-family: 'Secular One', sans-serif;
+    border-radius: 30px;
+    box-shadow: 20px 20px 50px 10px rgb(98, 0, 255) inset;
+    /*kilde: https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_box-shadow&preval=20px%2020px%2050px%2010px%20pink%20inset*/
+    background-color: bisque;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+
+header p{
+    display: flex;
+    align-items: flex-end;
+
+    
+}
+
+
+/*Justering på hvor hovedpunktet skal holde seg til ved siden av logo*/
+
+main{
+    border-radius: 30px;
+    box-shadow: 20px 20px 100px 50px rgb(98, 0, 255) inset;
+    /*kilde: https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_box-shadow&preval=20px%2020px%2050px%2010px%20pink%20inset*/
+    background-color: bisque;
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+main p{
+    font-family: 'Secular One', sans-serif;
+}
+
+section{
+    display: flex;
+    align-items: center;
+
+}
+
+/*la til en font som kan brukes på alle sider og fikk alle section artikkelkort holde seg sentralt på nettsiden*/
+
+article{
+    display: flex;
+    font-family: 'Secular One', sans-serif;
+    justify-content: center;
+}
+
+article a{
+    height: 1rem;
+    font-family: 'Secular One', sans-serif;
+
+}
+
+article p{
+    padding: 1rem;
+    width: 2rem;    
+    align-self: flex-end;
+    
+}
+
+/*prøvde mitt beste å sentralisere kortforklaringsskrift på artikkelkortene. fikk ikke til som ønsket akkurat, men man kan skjønne hva som skal forklares for de ulike temaene*/
+
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+
+img{
+    border-radius: 30px;
+    display: block;
+    width: 360px; height: 360px;
+}
+ /*har justert på størrelse av bilder på nettsiden og logo*/
+
+h2{
+    font-family: 'Secular One', sans-serif;
+    justify-content: left;
+}
+
+h2 p{
+    justify-content: left;
+}
+
+h3{
+    font-family: 'Secular One', sans-serif;
+
+}
+
+
+footer{
+    border-radius: 30px;
+    box-shadow: 20px 20px 50px 10px rgb(98, 0, 255) inset;
+    /*kilde: https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_box-shadow&preval=20px%2020px%2050px%2010px%20pink%20inset*/
+    background-color: bisque;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Secular One', sans-serif;
+}
+
+/*lagde mellomrom mellom kontakt oss og copyright for å skille hva som skal trykkes på*/
+
